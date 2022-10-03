@@ -1,0 +1,117 @@
+# dune exec scraper
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/loganj/Projects/Prolog_Projects/Research/scraper
+# Auto-detected concurrency: 10
+$ /usr/local/bin/ocamlc.opt -config > /var/folders/2h/18pxs4550hlc6gk4lr8xfmx00000gn/T/dune_f749ae_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/Users/loganj/.opam/4.14.0/lib/toplevel"
+#  ; ocaml_bin = External "/usr/local/bin"
+#  ; ocaml = Ok External "/Users/loganj/.opam/4.14.0/bin/ocaml"
+#  ; ocamlc = External "/usr/local/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/usr/local/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/usr/local/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/usr/local/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/loganj/.opam/4.14.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/usr/local/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/Users/loganj/Projects/Prolog_Projects/Research/scraper"
+#        ; "INSIDE_DUNE" :
+#            "/Users/loganj/Projects/Prolog_Projects/Research/scraper/_build/default"
+#        ; "MANPATH" :
+#            "/Users/loganj/Projects/Prolog_Projects/Research/scraper/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/loganj/Projects/Prolog_Projects/Research/scraper/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/loganj/Projects/Prolog_Projects/Research/scraper/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/loganj/Projects/Prolog_Projects/Research/scraper/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/Users/loganj/.opam/4.14.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default = "/usr/local/lib/ocaml"
+#      ; standard_library = "/usr/local/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "clang"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "clang"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "clang"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin21.6.0"
+#      ; target = "x86_64-apple-darwin21.6.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /Users/loganj/.opam/4.14.0/lib/angstrom -I /Users/loganj/.opam/4.14.0/lib/asn1-combinators -I /Users/loganj/.opam/4.14.0/lib/astring -I /Users/loganj/.opam/4.14.0/lib/base/caml -I /Users/loganj/.opam/4.14.0/lib/base64 -I /Users/loganj/.opam/4.14.0/lib/bigstringaf -I /Users/loganj/.opam/4.14.0/lib/bos -I /Users/loganj/.opam/4.14.0/lib/ca-certs -I /Users/loganj/.opam/4.14.0/lib/cohttp -I /Users/loganj/.opam/4.14.0/lib/cohttp-lwt -I /Users/loganj/.opam/4.14.0/lib/cohttp-lwt-unix -I /Users/loganj/.opam/4.14.0/lib/conduit -I /Users/loganj/.opam/4.14.0/lib/conduit-lwt -I /Users/loganj/.opam/4.14.0/lib/conduit-lwt-unix -I /Users/loganj/.opam/4.14.0/lib/cstruct -I /Users/loganj/.opam/4.14.0/lib/cstruct-sexp -I /Users/loganj/.opam/4.14.0/lib/domain-name -I /Users/loganj/.opam/4.14.0/lib/duration -I /Users/loganj/.opam/4.14.0/lib/eqaf -I /Users/loganj/.opam/4.14.0/lib/eqaf/bigstring -I /Users/loganj/.opam/4.14.0/lib/eqaf/cstruct -I /Users/loganj/.opam/4.14.0/lib/fmt -I /Users/loganj/.opam/4.14.0/lib/fpath -I /Users/loganj/.opam/4.14.0/lib/gmap -I /Users/loganj/.opam/4.14.0/lib/hkdf -I /Users/loganj/.opam/4.14.0/lib/ipaddr -I /Users/loganj/.opam/4.14.0/lib/ipaddr-sexp -I /Users/loganj/.opam/4.14.0/lib/ipaddr/unix -I /Users/loganj/.opam/4.14.0/lib/lambdasoup -I /Users/loganj/.opam/4.14.0/lib/logs -I /Users/loganj/.opam/4.14.0/lib/lwt -I /Users/loganj/.opam/4.14.0/lib/lwt/unix -I /Users/loganj/.opam/4.14.0/lib/macaddr -I /Users/loganj/.opam/4.14.0/lib/magic-mime -I /Users/loganj/.opam/4.14.0/lib/markup -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto-ec -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto-pk -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto-rng -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto-rng/lwt -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto-rng/unix -I /Users/loganj/.opam/4.14.0/lib/mtime -I /Users/loganj/.opam/4.14.0/lib/mtime/clock/os -I /Users/loganj/.opam/4.14.0/lib/ocplib-endian -I /Users/loganj/.opam/4.14.0/lib/ocplib-endian/bigstring -I /Users/loganj/.opam/4.14.0/lib/parsexp -I /Users/loganj/.opam/4.14.0/lib/pbkdf -I /Users/loganj/.opam/4.14.0/lib/ppx_sexp_conv/runtime-lib -I /Users/loganj/.opam/4.14.0/lib/ptime -I /Users/loganj/.opam/4.14.0/lib/ptime/clock/os -I /Users/loganj/.opam/4.14.0/lib/re -I /Users/loganj/.opam/4.14.0/lib/rresult -I /Users/loganj/.opam/4.14.0/lib/seq -I /Users/loganj/.opam/4.14.0/lib/sexplib -I /Users/loganj/.opam/4.14.0/lib/sexplib0 -I /Users/loganj/.opam/4.14.0/lib/stringext -I /Users/loganj/.opam/4.14.0/lib/tls -I /Users/loganj/.opam/4.14.0/lib/tls/lwt -I /Users/loganj/.opam/4.14.0/lib/uri -I /Users/loganj/.opam/4.14.0/lib/uri-sexp -I /Users/loganj/.opam/4.14.0/lib/uri/services -I /Users/loganj/.opam/4.14.0/lib/uutf -I /Users/loganj/.opam/4.14.0/lib/x509 -I /Users/loganj/.opam/4.14.0/lib/zarith -I /usr/local/lib/ocaml/threads -I lib/.scraper.objs/byte -I lib/.scraper.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/scraper.cmxa /Users/loganj/.opam/4.14.0/lib/re/re.cmxa /Users/loganj/.opam/4.14.0/lib/stringext/stringext.cmxa /Users/loganj/.opam/4.14.0/lib/bigstringaf/bigstringaf.cmxa -I /Users/loganj/.opam/4.14.0/lib/bigstringaf /Users/loganj/.opam/4.14.0/lib/angstrom/angstrom.cmxa /Users/loganj/.opam/4.14.0/lib/uri/uri.cmxa /Users/loganj/.opam/4.14.0/lib/sexplib0/sexplib0.cmxa /Users/loganj/.opam/4.14.0/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /Users/loganj/.opam/4.14.0/lib/uri-sexp/uri_sexp.cmxa -I /usr/local/lib/ocaml /Users/loganj/.opam/4.14.0/lib/base64/base64.cmxa /Users/loganj/.opam/4.14.0/lib/cohttp/cohttp.cmxa /Users/loganj/.opam/4.14.0/lib/lwt/lwt.cmxa /Users/loganj/.opam/4.14.0/lib/fmt/fmt.cmxa /Users/loganj/.opam/4.14.0/lib/logs/logs.cmxa /Users/loganj/.opam/4.14.0/lib/logs/logs_lwt.cmxa /usr/local/lib/ocaml/unix.cmxa -I /usr/local/lib/ocaml /usr/local/lib/ocaml/bigarray.cmxa -I /usr/local/lib/ocaml /Users/loganj/.opam/4.14.0/lib/base/caml/caml.cmxa /Users/loganj/.opam/4.14.0/lib/parsexp/parsexp.cmxa /Users/loganj/.opam/4.14.0/lib/sexplib/sexplib.cmxa /Users/loganj/.opam/4.14.0/lib/macaddr/macaddr.cmxa /Users/loganj/.opam/4.14.0/lib/domain-name/domain_name.cmxa /Users/loganj/.opam/4.14.0/lib/ipaddr/ipaddr.cmxa /Users/loganj/.opam/4.14.0/lib/ipaddr-sexp/ipaddr_sexp.cmxa /Users/loganj/.opam/4.14.0/lib/astring/astring.cmxa /Users/loganj/.opam/4.14.0/lib/conduit/conduit.cmxa /Users/loganj/.opam/4.14.0/lib/conduit-lwt/conduit_lwt.cmxa /Users/loganj/.opam/4.14.0/lib/magic-mime/magic_mime_library.cmxa /Users/loganj/.opam/4.14.0/lib/ocplib-endian/ocplib_endian.cmxa /Users/loganj/.opam/4.14.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cmxa /usr/local/lib/ocaml/threads/threads.cmxa -I /usr/local/lib/ocaml /Users/loganj/.opam/4.14.0/lib/lwt/unix/lwt_unix.cmxa -I /Users/loganj/.opam/4.14.0/lib/lwt/unix /Users/loganj/.opam/4.14.0/lib/uri/services/uri_services.cmxa /Users/loganj/.opam/4.14.0/lib/ipaddr/unix/ipaddr_unix.cmxa /Users/loganj/.opam/4.14.0/lib/cstruct/cstruct.cmxa -I /Users/loganj/.opam/4.14.0/lib/cstruct /Users/loganj/.opam/4.14.0/lib/cstruct-sexp/cstruct_sexp.cmxa /Users/loganj/.opam/4.14.0/lib/eqaf/eqaf.cmxa /Users/loganj/.opam/4.14.0/lib/eqaf/bigstring/eqaf_bigstring.cmxa /Users/loganj/.opam/4.14.0/lib/eqaf/cstruct/eqaf_cstruct.cmxa /Users/loganj/.opam/4.14.0/lib/mirage-crypto/mirage_crypto.cmxa -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto /Users/loganj/.opam/4.14.0/lib/hkdf/hkdf.cmxa /Users/loganj/.opam/4.14.0/lib/mirage-crypto-rng/mirage_crypto_rng.cmxa /Users/loganj/.opam/4.14.0/lib/zarith/zarith.cmxa -I /Users/loganj/.opam/4.14.0/lib/zarith /Users/loganj/.opam/4.14.0/lib/mirage-crypto-pk/mirage_crypto_pk.cmxa /Users/loganj/.opam/4.14.0/lib/ptime/ptime.cmxa /Users/loganj/.opam/4.14.0/lib/asn1-combinators/asn1_combinators.cmxa /Users/loganj/.opam/4.14.0/lib/gmap/gmap.cmxa /Users/loganj/.opam/4.14.0/lib/mirage-crypto-ec/mirage_crypto_ec.cmxa -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto-ec /Users/loganj/.opam/4.14.0/lib/pbkdf/pbkdf.cmxa /Users/loganj/.opam/4.14.0/lib/x509/x509.cmxa /Users/loganj/.opam/4.14.0/lib/tls/tls.cmxa /Users/loganj/.opam/4.14.0/lib/ptime/clock/os/ptime_clock.cmxa -I /Users/loganj/.opam/4.14.0/lib/ptime/clock/os /Users/loganj/.opam/4.14.0/lib/mirage-crypto-rng/unix/mirage_crypto_rng_unix.cmxa -I /Users/loganj/.opam/4.14.0/lib/mirage-crypto-rng/unix /Users/loganj/.opam/4.14.0/lib/duration/duration.cmxa /Users/loganj/.opam/4.14.0/lib/mtime/mtime.cmxa /Users/loganj/.opam/4.14.0/lib/mtime/clock/os/mtime_clock.cmxa -I /Users/loganj/.opam/4.14.0/lib/mtime/clock/os /Users/loganj/.opam/4.14.0/lib/mirage-crypto-rng/lwt/mirage_crypto_rng_lwt.cmxa /Users/loganj/.opam/4.14.0/lib/tls/lwt/tls_lwt.cmxa /Users/loganj/.opam/4.14.0/lib/rresult/rresult.cmxa /Users/loganj/.opam/4.14.0/lib/fpath/fpath.cmxa /Users/loganj/.opam/4.14.0/lib/bos/bos.cmxa /Users/loganj/.opam/4.14.0/lib/ca-certs/ca_certs.cmxa -I /Users/loganj/.opam/4.14.0/lib/ca-certs /Users/loganj/.opam/4.14.0/lib/conduit-lwt-unix/conduit_lwt_unix.cmxa /Users/loganj/.opam/4.14.0/lib/cohttp-lwt/cohttp_lwt.cmxa /Users/loganj/.opam/4.14.0/lib/logs/logs_fmt.cmxa /Users/loganj/.opam/4.14.0/lib/cohttp-lwt-unix/cohttp_lwt_unix.cmxa /Users/loganj/.opam/4.14.0/lib/uutf/uutf.cmxa /Users/loganj/.opam/4.14.0/lib/markup/markup.cmxa /Users/loganj/.opam/4.14.0/lib/lambdasoup/soup.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+> ld: warning: directory not found for option '-L/opt/local/lib'

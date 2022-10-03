@@ -1,0 +1,4 @@
+(executable
+ (public_name scraper)
+ (name main)
+ (libraries scraper cohttp lwt cohttp-lwt-unix lambdasoup))

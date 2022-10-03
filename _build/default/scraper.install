@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/scraper/META"
+  "_build/install/default/lib/scraper/dune-package"
+  "_build/install/default/lib/scraper/opam"
+]
+bin: [
+  "_build/install/default/bin/scraper"
+]
